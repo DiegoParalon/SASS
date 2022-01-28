@@ -1,0 +1,55 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+   
+
+    .box {
+        width: 30%;
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+        border: 1px solid red;
+        padding: 20px;
+
+        &.active {
+            background: red;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 10px 20px 30px 40px;
+        }
+
+        p {
+            
+            font-size: 18px;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        ul {
+            @include reset-list
+        }
+
+        a {
+            color: green;
+
+            &:hover {
+                color: yellow;
+                &+p.hidden {
+                    display: block;
+                }
+            }
+        }
+    }
+
+}

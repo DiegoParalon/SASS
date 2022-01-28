@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: bor;
+  box-sizing: bor;
+}
+
+body {
+  background-color: blue;
+  font-family: sans-serif;
+}
+
+.container .box .success, .container .box .warning, .container .box .danger {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+  background-color: green;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .box {
+  width: 30%;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  border: 1px solid red;
+  padding: 20px;
+}
+
+.container .box.active {
+  background: red;
+}
+
+.container .box h2 {
+  font-size: 22px;
+  margin: 10px 20px 30px 40px;
+}
+
+.container .box p {
+  font-size: 18px;
+}
+
+.container .box p.hidden {
+  display: none;
+}
+
+.container .box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container .box a {
+  color: green;
+}
+
+.container .box a:hover {
+  color: yellow;
+}
+
+.container .box a:hover + p.hidden {
+  display: block;
+}
+
+.container .box .success {
+  background-color: green;
+}
+
+.container .box .warning {
+  background-color: yellow;
+  color: black;
+}
+
+.container .box .danger {
+  background-color: red;
+}
+/*# sourceMappingURL=main.css.map */
